@@ -1,6 +1,10 @@
-import { Flex, Heading, Button, Box, Container, TextField, Card, } from "@radix-ui/themes";
+import { Heading, Box, Container, TextField } from "@radix-ui/themes";
 import { MagnifyingGlassIcon } from "@radix-ui/react-icons";
+
+import { Books } from "./views/layout/books";
+
 const App = () => {
+
   return (
     <Container>
         <Box>
@@ -13,17 +17,8 @@ const App = () => {
             </TextField.Slot>
         </TextField.Root>
         </Box>
-      <Flex direction="row" gap="4">
-          <Card>
-              <Button>Let's go</Button>
-          </Card>
-          <Card>
-              <Button>Let's go</Button>
-          </Card>
-          <Card>
-              <Button>Let's go</Button>
-          </Card>
-      </Flex>
+
+        <Books/>
     </Container>
   )
 }

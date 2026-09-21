@@ -53,7 +53,7 @@ const injectedRtkApi = api
     overrideExisting: false,
   });
 export { injectedRtkApi as booksApi };
-export type GetBooksApiResponse = /** status 200 OK */ ModelsBook[][];
+export type GetBooksApiResponse = /** status 200 OK */ ModelsBook[];
 export type GetBooksApiArg = {
   /** string valid */
   completed?: string;

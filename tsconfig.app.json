@@ -20,7 +20,23 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "erasableSyntaxOnly": true,
-    "noFallthroughCasesInSwitch": true
+    "noFallthroughCasesInSwitch": true,
+
+    "baseUrl": "./",
+    "paths": {
+      "@components/*": [
+        "src/views/components/*"
+      ],
+      "@data/*": [
+        "src/data/*"
+      ],
+      "@infrastructure/*": [
+        "src/infrastructure/*"
+      ],
+      "@store/*": [
+        "src/store/*"
+      ]
+    }
   },
   "include": ["src"]
 }
