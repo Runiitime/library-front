@@ -11,5 +11,5 @@ export const Books = React.memo(() => {
         return booksList.map((book: Book) => <Item data={book} key={book.id} />)
     }, [booksList])
 
-    return <Flex direction="row" gap="4"> { items } </Flex>
+    return <Flex direction="row" gap="4" py="6"> { items } </Flex>
 })
